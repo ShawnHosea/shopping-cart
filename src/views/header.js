@@ -11,7 +11,7 @@ module.exports = function header(props) {
             <a href="/"><img height='40px' alt='logo' src="${logo}"></a>
             <a href="/about">How it works</a>
             <a href="/pricing">Pricing</a>
-            <a href="/login"><button>Login</button></a>
+            <a href="/cart"><button>Cart</button></a>
         </div>
     </div>`
 

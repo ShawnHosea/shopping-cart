@@ -13,7 +13,7 @@ async function http(req) {
 
   return {
     statusCode: 302,
-    location: '/'
+    location: '/cart'
   }
 }
 

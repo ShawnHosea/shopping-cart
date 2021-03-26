@@ -7,6 +7,7 @@ folder public
 @http
 get /
 get /cart
+get /checkout
 post /cart
 post /cart/delete
 post /cart/update

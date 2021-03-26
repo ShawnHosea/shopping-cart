@@ -2,7 +2,7 @@ let arc = require('@architect/functions')
 let data = require('@begin/data')
 
 async function http (req) {
-  console.log(req.body)
+  // console.log(req.body)
 
   let set = await data.set({
     table: "shopping-cart",
@@ -12,8 +12,6 @@ async function http (req) {
       prodId: req.body.productId
     }
   })
-
-  console.log(set)
 
   return {
     statusCode: 302,
