@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "A fresh new Architect project!",
   "scripts": {
-    "start": "npx sandbox"
+    "start": "npx sandbox",
+    "styles": "npx cssmitten ./config.json > ./public/styles/styles.css"
   },
   "devDependencies": {
     "@architect/architect": "^8.5.2"

@@ -1,6 +1,9 @@
 @app
 shopping
 
+@static
+folder public
+
 @http
 get /
 get /cart
