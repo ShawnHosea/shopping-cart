@@ -5,8 +5,8 @@ shopping
 get /
 get /cart
 post /cart
-post /cart/delete/
-post /cart/update/
+post /cart/delete
+post /cart/update
 
 
 @tables
