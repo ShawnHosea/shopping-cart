@@ -19,10 +19,10 @@ async function http (req) {
         <div class="product">
           <img height='200px' alt='logo' src="${product}">
           <p>Item 1</p>
-          <form action='cart/' method='POST'>
+          <form action='cart/' method='POST' id='nameform>
           <input type="text" name="quantity"/>
           <input type="hidden" name="productId" value='001'>
-          <button>Add to Cart</button>
+          <button type="submit" form="nameform" value="Submit">Add to Cart</button>
           </form>
         </div>
         <div class="product">
