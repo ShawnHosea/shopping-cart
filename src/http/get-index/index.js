@@ -22,7 +22,7 @@ async function http (req) {
           <form action='cart/' method='POST' id='nameform'>
           <input type="text" name="quantity"/>
           <input type="hidden" name="productId" value='001'>
-          <button type="submit" form="nameform" value="Submit">Add to Cart</button>
+          <button>Add to Cart</button>
           </form>
         </div>
         <div class="product">

@@ -2,9 +2,9 @@ let arc = require('@architect/functions')
 let data = require('@begin/data')
 
 async function http (req) {
-  // console.log(req.body)
+  
 
-  let set = await data.set({
+ await data.set({
     table: "shopping-cart",
     key: req.body.productId,
     cartItem: {
