@@ -20,47 +20,42 @@ async function http (req) {
           <img height='200px' alt='logo' src="${product}">
           <p>Item 1</p>
           <form action='cart' method='POST' id='nameform'>
-          <input list="numbers" name="quantity"/>
-          <datalist id="numbers">
-            <option value="2">
-            <option value="4">
-            <option value="6">
-          </datalist>
+          <select name="quantity" id="quantity" placeholder="qty"/>
+            <option value="2">Qty: 2</option>
+            <option value="4">Qty: 4</option>
+            <option value="6">Qty: 6</option>
+            <option value="8">Qty: 8</option>
           <input type="hidden" name="productId" value='001'>
-          <button>Add to Cart</button>
+          <button class="btn">Add to Cart</button>
           </form>
         </div>
         <div class="product">
           <img height='200px' alt='logo' src="${product}">
           <p>Item 2</p>
           <form action='cart' method='POST'>
-          <input list="numbers" name="quantity"/>
-          <datalist id="numbers">
-            <option value="2">
-            <option value="4">
-            <option value="6">
-          </datalist>
+          <select name="quantity" id="quantity" placeholder="qty"/>
+            <option value="2">Qty: 2</option>
+            <option value="4">Qty: 4</option>
+            <option value="6">Qty: 6</option>
+            <option value="8">Qty: 8</option>
           <input type="hidden" name="productId" value='002'>
-          <button>Add to Cart</button>
+          <button class="btn">Add to Cart</button>
           </form>
         </div>
         <div class="product">
           <img height='200px' alt='logo' src="${product}">
           <p>Item 3</p>
           <form action='cart' method='POST'>
-          <input list="numbers" name="quantity"/>
-          <datalist id="numbers">
-            <option value="2">
-            <option value="4">
-            <option value="6">
-          </datalist>
+          <select name="quantity" id="quantity" placeholder="qty"/>
+            <option value="2">Qty: 2</option>
+            <option value="4">Qty: 4</option>
+            <option value="6">Qty: 6</option>
+            <option value="8">Qty: 8</option>
           <input type="hidden" name="productId" value='003'>
-          <button>Add to Cart</button>
+          <button class="btn">Add to Cart</button>
           </form>
         </div>
       </div>
-      <hr>
-      <a href="/cart"><button>Checkout</button></a>
     </div>
     `
   })

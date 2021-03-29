@@ -3,7 +3,6 @@ let data = require('@begin/data')
 
 async function http (req) {
   
-
  await data.set({
     table: "shopping-cart",
     key: req.body.productId,

@@ -18,7 +18,7 @@ async function route(req) {
       <p>${result.map(item => `<li>${JSON.stringify(item.cartItem)}</li>
       <form action='cart/delete' method='POST'>
       <input type="hidden" name="productId" value=${item.key}>
-      <button>Remove from Cart</button>
+      <button class="btn">Remove from Cart</button>
       </form>`).join('')}</p>
      
     </div>

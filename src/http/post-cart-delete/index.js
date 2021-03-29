@@ -2,7 +2,6 @@ let arc = require('@architect/functions')
 let data = require('@begin/data')
 
 async function http(req) {
-  console.log(req.body)
 
 await data.destroy({
     table: "shopping-cart",
