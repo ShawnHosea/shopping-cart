@@ -9,13 +9,14 @@ async function route(req) {
     key: req.body.productId
   })
 
+  console.log(JSON.stringify(result, null, 2))
 
   let body = layout({ 
     content: 
     `<div class="wrapper">
-      <p>This is your order</p>
-      <p>${JSON.stringify(result, null, 2)}</p>
-      <p>${result.map(item => `<li>${JSON.stringify(item.cartItem)}</li>
+      <h2>This is your order</h2>
+      <h3>Edit order</h3>
+      <p>${result.map(item => `<p>${JSON.stringify(item.cartItem, null, 2)}</p></p>
       <form action='cart/delete' method='POST'>
       <input type="hidden" name="productId" value=${item.key}>
       <button class="btn">Remove from Cart</button>

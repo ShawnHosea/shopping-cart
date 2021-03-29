@@ -105,3 +105,7 @@ a:hover {
 .product img {
     box-shadow: 0 8px 6px -6px black;
 }
+
+.order {
+  box-shadow: 0 8px 6px -6px black;
+}
