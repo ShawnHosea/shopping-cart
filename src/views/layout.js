@@ -1,4 +1,4 @@
-
+const footer = require('./footer')
 const header = require('./header')
 const main = require('./main')
 const arc = require('@architect/functions')
@@ -18,10 +18,11 @@ return `
   
     <link rel="stylesheet" type="text/css" href="${arc.static('/styles/custom.css')}">
 </head>
-<body class="font-sans">
+<body>
     <div>
         ${header(props)}
         ${main(props)}
+        ${footer(props)}
 
     </div>
 </body>

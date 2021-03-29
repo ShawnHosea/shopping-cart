@@ -23,18 +23,18 @@ a:hover {
 .HeaderGroup {
   max-width: 900px;
   margin: 0rem auto 0;
-  padding: 3rem 0;
+  padding: 2rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
-  grid-template-areas: "H1 . H2";
+  grid-template-areas: "H1 . . H2";
 }
   
 .headLogo img {
   grid-area: H1;
 }
-.headLogin {
+.headBtn {
   grid-area: H2;
 }
 
@@ -46,7 +46,7 @@ a:hover {
   text-align: center;
 }
 
-
+/* Content */
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

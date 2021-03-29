@@ -14,10 +14,8 @@ async function route(req) {
     content: 
     `<div class="wrapper">
       <p>This is your order</p>
-      <p>${JSON.stringify(result)}</p>
-
+      <p>${JSON.stringify(result, null, 2)}</p>
       <p>${result.map(item => `<li>${JSON.stringify(item.cartItem)}</li>
-      
       <form action='cart/delete' method='POST'>
       <input type="hidden" name="productId" value=${item.key}>
       <button>Remove from Cart</button>

@@ -20,7 +20,12 @@ async function http (req) {
           <img height='200px' alt='logo' src="${product}">
           <p>Item 1</p>
           <form action='cart' method='POST' id='nameform'>
-          <input type="text" name="quantity"/>
+          <input list="numbers" name="quantity"/>
+          <datalist id="numbers">
+            <option value="2">
+            <option value="4">
+            <option value="6">
+          </datalist>
           <input type="hidden" name="productId" value='001'>
           <button>Add to Cart</button>
           </form>
@@ -29,7 +34,12 @@ async function http (req) {
           <img height='200px' alt='logo' src="${product}">
           <p>Item 2</p>
           <form action='cart' method='POST'>
-          <input type="text" name="quantity"/>
+          <input list="numbers" name="quantity"/>
+          <datalist id="numbers">
+            <option value="2">
+            <option value="4">
+            <option value="6">
+          </datalist>
           <input type="hidden" name="productId" value='002'>
           <button>Add to Cart</button>
           </form>
@@ -38,7 +48,12 @@ async function http (req) {
           <img height='200px' alt='logo' src="${product}">
           <p>Item 3</p>
           <form action='cart' method='POST'>
-          <input type="text" name="quantity"/>
+          <input list="numbers" name="quantity"/>
+          <datalist id="numbers">
+            <option value="2">
+            <option value="4">
+            <option value="6">
+          </datalist>
           <input type="hidden" name="productId" value='003'>
           <button>Add to Cart</button>
           </form>
